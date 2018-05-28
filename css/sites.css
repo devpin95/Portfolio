@@ -1,0 +1,195 @@
+@media only screen and (min-width: 300px) {
+    .imageWindow{
+        border-radius:10px;
+        -moz-border-radius:10px;
+        -webkit-border-radius:10px;
+        box-shadow:0px 0px 3px #333;
+        -moz-box-shadow:0px 0px 3px #333;
+        -webkit-box-shadow:0px 0px 3px #333;
+        border:1px solid #fff;
+        width:100%;
+        height:auto;
+        overflow:hidden;
+    }
+    .imageWindow img{
+        position:relative;
+        margin:0 auto;
+        margin-bottom:-4px;
+        width:100%;
+        height:auto;
+    }
+    .siteHeader{
+        margin:40px 0 35px 0;
+        position:relative;
+    }
+    .siteHeader h1{
+        float:inherit;
+        font-weight:normal !important;
+        font-family:"bebas regular";
+        letter-spacing:.03em;
+        color:#00b2b2;
+    }
+    .siteLink img{
+        width:29px;
+        height:auto;
+        margin-top:2px;
+        margin-left:9px;
+
+    }
+    .badgesLabel{
+        display:block;
+        width:100%;
+        margin-right:15px;
+        line-height:2.3em;
+    }
+    .badges{
+        position:relative;
+        width:auto;
+        height:30px;
+        margin:30px 0 5px 0;
+    }
+    .badge img{
+        height:30px;
+        margin:0 0 0 5px;
+    }
+    .badge{
+        width:auto;
+        float:left;
+    }
+    .badge:hover:after{
+        background: #333;
+        background: rgba(0,0,0,.8);
+        border-radius: 3px;
+        box-shadow:0 0 0 2px hsl(0, 0%, 0%), 0 2px 6px #000;
+        color: #fff;
+        content: attr(data-title);
+        position: absolute;
+        z-index: 98;
+        bottom:35px;
+        left:0;
+        height:20px;
+        border:1px solid #fff;
+        text-align:center;
+        line-height:1.5em;
+        font-size:13px;
+    }
+    #badgeProjectManager:hover:after{width:124px;}
+    #badgeCSS:hover:after{width:50px;}
+    #badgeHTML:hover:after{width:74px;}
+    #badgejQuery:hover:after{width:80px;}
+    #badgeCSS3:hover:after{width:50px;}
+    #badgeHTML5:hover:after{width:70px;}
+    #badgePHP:hover:after{width:50px;}
+    #badgeDesign:hover:after{width:74px;}
+    #badgeTutorial:hover:after{width:124px;}
+    .siteDescription{
+        line-height:1.7em;
+        letter-spacing:.02em;
+        clear:both;
+    }
+    .siteImage{
+        padding:15px 15px;
+        margin-bottom:20px;
+        margin-top:25px;
+        background-image:url(../images/debut_dark.png);
+        color:#ededed;
+        border-radius:5px;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border:1px solid #fff;
+        text-shadow:1px 1px 0px #000;
+    }
+    .siteImage img{
+        width:100%;
+        height:auto;
+
+        box-shadow:0 3px 5px #000;
+    }
+}
+@media only screen and (min-width: 671px) {
+    .siteHeader{
+        height:40px;
+        position:relative;
+    }
+    .siteHeader h1{
+        float:left;
+        font-weight:normal !important;
+        font-family:"bebas regular";
+        letter-spacing:.03em;
+        color:#00b2b2;
+    }
+    .siteLink img{
+        width:29px;
+        height:auto;
+        margin-left:9px;
+    }
+    .badgesLabel{
+        display:block;
+        width:100px;
+        float:right;
+        margin-right:15px;
+        line-height:2.3em;
+    }
+    .badges{
+        position:relative;
+        float:right;
+        height:30px;
+        margin:0;
+    }
+    .badge img{
+        height:30px;
+        margin:0 0 0 5px;
+    }
+    .badge:hover:after{
+        background: #333;
+        background: rgba(0,0,0,.8);
+        border-radius: 3px;
+        box-shadow:0 0 0 2px hsl(0, 0%, 0%), 0 2px 6px #000;
+        color: #fff;
+        content: attr(data-title);
+        position: absolute;
+        z-index: 98;
+        left:50%;
+        bottom:35px;
+        height:20px;
+        border:1px solid #fff;
+        text-align:center;
+        line-height:1.5em;
+        font-size:13px;
+    }
+    #badgeProjectManager:hover:after{
+        margin-left:-62px;
+    }
+    #badgeCSS:hover:after{
+        margin-left:-25px;
+    }
+    #badgeHTML:hover:after{
+        margin-left:-37px;
+    }
+    #badgejQuery:hover:after{
+        margin-left:-40px;
+    }
+    #badgeCSS3:hover:after{
+        margin-left:-25px;
+    }
+    #badgeHTML5:hover:after{
+        margin-left:-35px;
+    }
+    #badgePHP:hover:after{
+        margin-left:-25px;
+    }
+    #badgeDesign:hover:after{
+        margin-left:-37px;
+    }
+    #badgeTutorial:hover:after{
+        margin-left:-62px;
+    }
+    .siteDescription{
+        line-height:1.7em;
+        letter-spacing:.02em;
+        clear:both;
+    }
+    .siteImage img{
+
+    }
+}

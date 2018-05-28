@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/games.css">
+
+<title>Devin Piner | Web Designs</title>
+</head>
+
+<body>
+    <div class="content">
+        
+        <!--Header-->
+        <?php include "header.php"; ?>
+        
+        <!--Body-->
+        <main>    
+                           
+            <!--Game-->
+            <div class="gameWrapper" style="width:600px; height:500px; background-image:url(../images/blockbreakerBG.jpg);">
+                <div class="game" style="width:478px; height:400px; margin-top:-200px;">
+                    <object width="500" height="400" style="margin-left:-10px;"> 
+                        <param name="movie" value="BlockBreaker.swf"> 
+                        <embed src="BlockBreaker.swf" width="550" height="400"></embed> 
+                    </object> 
+                </div>   
+            </div>  
+            
+            <!--Game Info-->
+            <span class="sectionHeader">BLOCK BREAKER</span>	
+        
+            <div class="siteDescription">Block Breaker presents the second iteration of my skills in developing a games "splash screen," the first iteration being <a href="whack-a-capsule">Whack-a-Capsule</a>. In this iterations, I developed a splash screen completely independent of the actually game. In terms of Flash, the splash screen was designed and coded on the first frame of the timeline while the game itself was on the second frame.</div>           
+               
+        </main>
+        
+        <!--Footer-->
+        <?php include "footer.php"; ?>
+            
+    </div>
+</body>
+</html>

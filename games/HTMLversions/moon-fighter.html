@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/games.css">
+
+<title>Devin Piner | Web Designs</title>
+</head>
+
+<body>
+    <div class="content">
+        
+        <?php include "header.php"; ?>
+        
+        <!--Body-->
+        <main>    
+                           
+            <!--Game-->
+            <div class="gameWrapper" style="width:580px; height:600px; background-image:url(../images/moonfighterBG.jpg);">
+                <div class="game" style="width:400px; height:500px;margin-top:-250px;">
+                    <object width="400" height="500"> 
+                        <param name="movie" value="MoonFighter.swf"> 
+                        <embed src="MoonFighter.swf" width="550" height="400"></embed> 
+                    </object> 
+                </div>   
+            </div>  
+            
+            <!--Game Info-->
+            <span class="sectionHeader">MARS RACER</span>	
+        
+            <div class="siteDescription">In Mars Racer, I chose to focus less on the actual user inteface - implementing a splash screen similar to that of <a href="block-breaker">Block Breaker</a> - and more on user centered design. I developed a <em>start</em> button at the beginning of the game, as well as another start button at the end of the game allowing the player to restart the game.</div>           
+               
+        </main>
+        
+        <?php include "footer.php"; ?>
+            
+    </div>
+</body>
+</html>

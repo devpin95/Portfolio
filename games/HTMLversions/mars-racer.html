@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/games.css">
+
+<title>Devin Piner | Web Designs</title>
+</head>
+
+<body>
+    <div class="content">
+        
+        <!--Header-->
+        <?php include "header.php"; ?>
+        
+        <!--Body-->
+        <main>    
+                           
+            <!--Game-->
+            <div class="gameWrapper" style="width:680px; height:510px; background-image:url(../images/marsracerBG.jpg);">
+                <div class="game" style="width:530px; height:398px;margin-top:-199px;">
+                    <object width="530" height="398"> 
+                        <param name="movie" value="mars_racer.swf"> 
+                        <embed src="mars_racer.swf" width="550" height="400"></embed> 
+                    </object> 
+                </div>   
+            </div>  
+            
+            <!--Game Info-->
+            <span class="sectionHeader">MARS RACER</span>	
+        
+            <div class="siteDescription">Mars Racer was the first game that I attempted a full game menu system, in-game and out. While the main menu contains the same information as the other menus I have developed, the in-game menu presented a way to provide extra information to the player without the need to restart the game. In this case, Mars Racers in-game menu provides the user with a means to exit the game, review the game controls, and the objective of the game. </div>           
+               
+        </main>
+        
+        <!--Footer-->
+        <?php include "footer.php"; ?>
+            
+    </div>
+</body>
+</html>
