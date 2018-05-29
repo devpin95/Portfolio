@@ -84,11 +84,18 @@
                 
                 <!--Flash Games-->                
                 <div class="work first-in-pair">  
-                    <a href="/games" class="workLink"><img src="images/flashGames.jpg" class="image games" alt="User Interface Study" /></a>
+                    <a href="games.php" class="workLink"><img src="images/flashGames.jpg" class="image games" alt="User Interface Study" /></a>
                     <div class="title"><a href="games.php">Flash Games</a></div>
                     Game UI study
                 </div>
-                <div class="clearFix">&nbsp;</div>
+
+                <!--JavaScript Games-->                
+                <div class="work second-in-pair">  
+                    <a href="jsgames.php" class="workLink"><img src="images/jsGames.jpg" class="image isaac" alt="Design Study" /></a> 
+                    <div class="title"><a href="jsgames.php">JavaScript + HTML5 Games</a></div>
+                    Web-based game study.
+                </div>         
+                <div class="clearFix"></div>   
                                                                
             </div>
 
