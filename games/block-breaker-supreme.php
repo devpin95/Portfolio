@@ -78,6 +78,9 @@
                     <script src="gamesJS/BlockBreakerSupreme/GLOBALS.js"></script>
                     <script src="gamesJS/BlockBreakerSupreme/levels.js"></script>
                     <script>
+                        // I give up trying to find where they all are
+                        alert = function() {};
+                        
                         function startGame() {
                             player = new Player();
                             myPaddle = new paddle();

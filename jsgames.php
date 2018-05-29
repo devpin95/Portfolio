@@ -31,7 +31,7 @@
             
             <!--AA Bomb-->
             <div class="game">
-            	<div class="gameImage"><a href="#" class="fillLink"></a><img src="images/jsGames.jpg" alt="BlockBreaker Supreme" /></div>
+            	<div class="gameImage"><a href="games/block-breaker-supreme" class="fillLink"></a><img src="images/jsGames.jpg" alt="BlockBreaker Supreme" /></div>
                 
                 <div class="gameInfo">
                     <h3><a href="games/block-breaker-supreme">Blockbreaker Supreme!</a></h3>

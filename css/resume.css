@@ -89,7 +89,7 @@ h2.education{
 }
 .subTopic{
 	font-family:"droid regular";
-	color:#aaa;	
+	color:#ccc;	
 }
 .skillList{
 	list-style-type:none;
@@ -102,7 +102,9 @@ h2.education{
 .skillList li:last-child{
 	margin-bottom:-20px;	
 }
-
+span.piner{
+	color:#f00;
+}
 
 @media only screen and (min-width: 960px){
 
@@ -194,6 +196,9 @@ h2.education{
 }
 .skillList li:last-child{
 	margin-bottom:-20px;	
+}
+span.piner{
+	color:#f00 !important;
 }
 }
 
