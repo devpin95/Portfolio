@@ -3,7 +3,7 @@ var CLASSIC_MODE_HEADER;
 var classicModeLevelSelectionScene = {
 	setup : function() {
 
-		CLASSIC_MODE_HEADER = new block( 548, 100, "gamesAssets/BlockBreakerSupreme/mode_classic_header.png", ( myGameArea.canvas.width / 2 ) - 274, 25, 0, "image" );
+		CLASSIC_MODE_HEADER = new block( 548, 100, "gamesAssets/BlockBreakerSupreme/mode_classic_header.png", ( GAMEAREA.canvas.width / 2 ) - 274, 25, 0, "image" );
 
 		this.menu = new menu();
 		var column = row = count = 0;

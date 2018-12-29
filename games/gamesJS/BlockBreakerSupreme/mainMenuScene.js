@@ -3,7 +3,7 @@ var LOGO;
 var mainMenuScene = {
 	setup : function() {
 		//bonuses_image = new block( 437, 139, bonuses_image_path, width/2 - 219, 25, 0, "image" );
-		LOGO = new block( 260, 40, "gamesAssets/BlockBreakerSupreme/logo.png", ( myGameArea.canvas.width / 2 ) - 130, 75, 0, "image" );
+		LOGO = new block( 260, 40, "gamesAssets/BlockBreakerSupreme/logo.png", ( GAMEAREA.canvas.width / 2 ) - 130, 75, 0, "image" );
 
 		var play_button = "gamesAssets/BlockBreakerSupreme/mode_play_button.png";
 		var play_button_hover = "gamesAssets/BlockBreakerSupreme/mode_play_button_hover.png";
@@ -24,7 +24,7 @@ var mainMenuScene = {
 			GAME_STATE.change_scene( SCENES.C_MODE_LVL_SELECT );
 			GAME_STATE.MESSAGE = "Classic Mode";
 		} );
-		this.menu.add( ( myGameArea.canvas.width / 2 ) - 45, ( myGameArea.canvas.width / 2 ) - 55, height - 55, height - 60, "image", settings_button, settings_button_hover, function() {
+		this.menu.add( ( GAMEAREA.canvas.width / 2 ) - 45, ( GAMEAREA.canvas.width / 2 ) - 55, height - 55, height - 60, "image", settings_button, settings_button_hover, function() {
 			GAME_STATE.change_scene( SCENES.SETTINGS_SCENE );
 		} );
 
@@ -59,12 +59,12 @@ var mainMenuScene = {
 		this.menu.update();
 
 		for ( var i = 0; i < this.menu_balls.length; ++i ) {
-			myGameArea.collision( this.menu_balls[i] );
+			GAMEAREA.collision( this.menu_balls[i] );
 
-			if ( myGameArea.bottom_hit ) {
+			if ( GAMEAREA.bottom_hit ) {
 				this.menu_balls[i].y = height - this.menu_balls[i].height;
 				this.menu_balls[i].spdY *= -1;
-				myGameArea.bottom_hit = false;
+				GAMEAREA.bottom_hit = false;
 			}
 
 			this.menu_balls[i].newPos();

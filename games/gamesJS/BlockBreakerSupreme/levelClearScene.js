@@ -23,9 +23,9 @@ var bonuses_image_path = "gamesAssets/BlockBreakerSupreme/level_cleared.png";
 var levelClearScene = {
 	setup : function() {
 		bonuses_image = new block( 437, 139, bonuses_image_path, width/2 - 219, 25, 0, "image" );
-		RETRY = new block( 60, 30, retry_image, ( myGameArea.canvas.width / 2 ) - 30, 400, 0, "image" );
-		NEXT = new block( 143, 40, next_image, ( myGameArea.canvas.width / 2 ) - 71, 440, 0, "image" );
-		MENU = new block( 60, 30, next_image, ( myGameArea.canvas.width / 2 ) - 71, 480, 0, "image" );
+		RETRY = new block( 60, 30, retry_image, ( GAMEAREA.canvas.width / 2 ) - 30, 400, 0, "image" );
+		NEXT = new block( 143, 40, next_image, ( GAMEAREA.canvas.width / 2 ) - 71, 440, 0, "image" );
+		MENU = new block( 60, 30, next_image, ( GAMEAREA.canvas.width / 2 ) - 71, 480, 0, "image" );
 
 		this.scene_ready = true;
 	},
@@ -43,7 +43,7 @@ var levelClearScene = {
 			RETRY.image.src = retry_image_hover;
 			RETRY.height = 40;
 			RETRY.width = 80;
-			RETRY.x = ( myGameArea.canvas.width / 2 ) - 40;
+			RETRY.x = ( GAMEAREA.canvas.width / 2 ) - 40;
 			RETRY.y = 345;
 
 		}
@@ -52,7 +52,7 @@ var levelClearScene = {
 			RETRY.image.src = retry_image;
 			RETRY.height = 30;
 			RETRY.width = 60;
-			RETRY.x = ( myGameArea.canvas.width / 2 ) - 30;
+			RETRY.x = ( GAMEAREA.canvas.width / 2 ) - 30;
 			RETRY.y = 350;
 		}
 
@@ -65,7 +65,7 @@ var levelClearScene = {
 			NEXT.image.src = next_image_hover;
 			NEXT.height = 50;
 			NEXT.width = 179;
-			NEXT.x = ( myGameArea.canvas.width / 2 ) - 90;
+			NEXT.x = ( GAMEAREA.canvas.width / 2 ) - 90;
 			NEXT.y = 385;
 
 		}
@@ -74,7 +74,7 @@ var levelClearScene = {
 			NEXT.image.src = next_image;
 			NEXT.height = 40;
 			NEXT.width = 143;
-			NEXT.x = ( myGameArea.canvas.width / 2 ) - 71;
+			NEXT.x = ( GAMEAREA.canvas.width / 2 ) - 71;
 			NEXT.y = 390;
 		}
 
@@ -87,7 +87,7 @@ var levelClearScene = {
 			MENU.image.src = menu_image_hover;
 			MENU.height = 40;
 			MENU.width = 80;
-			MENU.x = ( myGameArea.canvas.width / 2 ) - 40;
+			MENU.x = ( GAMEAREA.canvas.width / 2 ) - 40;
 			MENU.y = 435;
 
 		}
@@ -96,7 +96,7 @@ var levelClearScene = {
 			MENU.image.src = menu_image;
 			MENU.height = 30;
 			MENU.width = 60;
-			MENU.x = ( myGameArea.canvas.width / 2 ) - 30;
+			MENU.x = ( GAMEAREA.canvas.width / 2 ) - 30;
 			MENU.y = 440;
 		}
 
@@ -108,37 +108,37 @@ var levelClearScene = {
 
 		if ( player.lives > 0 ) {
 			//player.score += bonuses[0]( player.lives );
-			myGameArea.context.font = "18px Arial";
-			myGameArea.context.fillStyle = "#000";
-			myGameArea.context.textAlign = "center";
-			myGameArea.context.fillText( "Lives: +" + bonuses[0](player.lives), width/2, starting_y  + (40 * next_line) );
+			GAMEAREA.context.font = "18px Arial";
+			GAMEAREA.context.fillStyle = "#000";
+			GAMEAREA.context.textAlign = "center";
+			GAMEAREA.context.fillText( "Lives: +" + bonuses[0](player.lives), width/2, starting_y  + (40 * next_line) );
 			++next_line;
 		}
 
 		if ( UI.timer.total_time < 60 ) {
 			//player.score += bonuses[1]( total_time );
-			myGameArea.context.font = "18px Arial";
-			myGameArea.context.fillStyle = "#000";
-			myGameArea.context.textAlign = "center";
-			myGameArea.context.fillText( "Time: +" + bonuses[1](UI.timer.total_time), width/2, starting_y + (40 * next_line) );
+			GAMEAREA.context.font = "18px Arial";
+			GAMEAREA.context.fillStyle = "#000";
+			GAMEAREA.context.textAlign = "center";
+			GAMEAREA.context.fillText( "Time: +" + bonuses[1](UI.timer.total_time), width/2, starting_y + (40 * next_line) );
 			++next_line;
 		}
 
 		if ( player.lives == 3 ) {
 			//player.score += bonuses[2]( );
-			myGameArea.context.font = "18px Arial";
-			myGameArea.context.fillStyle = "#000";
-			myGameArea.context.textAlign = "center";
-			myGameArea.context.fillText( "Flawless: +" + bonuses[2](), width/2, starting_y + (40 * next_line) );
+			GAMEAREA.context.font = "18px Arial";
+			GAMEAREA.context.fillStyle = "#000";
+			GAMEAREA.context.textAlign = "center";
+			GAMEAREA.context.fillText( "Flawless: +" + bonuses[2](), width/2, starting_y + (40 * next_line) );
 			++next_line;
 		}
 
 		if ( myPaddle.numberHits <= 20 ) {
 			//player.score += bonuses[3]( myPaddle.numberHits );
-			myGameArea.context.font = "18px Arial";
-			myGameArea.context.fillStyle = "#000";
-			myGameArea.context.textAlign = "center";
-			myGameArea.context.fillText( "Paddle Hits: +" + bonuses[3]( myPaddle.numberHits ), width/2, starting_y + (40 * next_line) );
+			GAMEAREA.context.font = "18px Arial";
+			GAMEAREA.context.fillStyle = "#000";
+			GAMEAREA.context.textAlign = "center";
+			GAMEAREA.context.fillText( "Paddle Hits: +" + bonuses[3]( myPaddle.numberHits ), width/2, starting_y + (40 * next_line) );
 			++next_line;
 		}
 

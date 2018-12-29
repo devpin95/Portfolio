@@ -87,10 +87,10 @@
                             myBlock = new block( 100, 50, "", 100, 100, "image" );
 
                             GAME_STATE.change_scene( SCENES.MAIN_MENU_SCENE );
-                            myGameArea.start( );
+                            GAMEAREA.start( );
                         }
 
-                        var myGameArea = {
+                        var GAMEAREA = {
                             canvas : document.getElementById("game"),
 
                             start : function() {
@@ -147,7 +147,7 @@
                         var block_to_delete = -1;
 
                         function updateGameArea() {
-                            myGameArea.clear();
+                            GAMEAREA.clear();
 
                             if ( !GAME_STATE.ACTIVE_SCENE.scene_ready ) {
                                 GAME_STATE.ACTIVE_SCENE.setup();

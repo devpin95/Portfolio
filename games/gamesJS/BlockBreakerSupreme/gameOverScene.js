@@ -10,9 +10,9 @@ var RETRY;
 
 var gameOverScene = {
 	setup : function( ) {
-		OVER_HEADER = new block( 304, 50, over_header_image, ( myGameArea.canvas.width / 2 ) - 152, 75, 0, "image" );
-		RETRY = new block( 60, 30, retry_image, ( myGameArea.canvas.width / 2 ) - 30, 150, 0, "image" );
-		MENU = new block( 60, 30, menu_image, ( myGameArea.canvas.width / 2 ) - 71, 480, 0, "image" );
+		OVER_HEADER = new block( 304, 50, over_header_image, ( GAMEAREA.canvas.width / 2 ) - 152, 75, 0, "image" );
+		RETRY = new block( 60, 30, retry_image, ( GAMEAREA.canvas.width / 2 ) - 30, 150, 0, "image" );
+		MENU = new block( 60, 30, menu_image, ( GAMEAREA.canvas.width / 2 ) - 71, 480, 0, "image" );
 		this.scene_ready = true;
 	},
 
@@ -36,7 +36,7 @@ var gameOverScene = {
 			MENU.image.src = menu_image_hover;
 			MENU.height = 40;
 			MENU.width = 80;
-			MENU.x = ( myGameArea.canvas.width / 2 ) - 40;
+			MENU.x = ( GAMEAREA.canvas.width / 2 ) - 40;
 			MENU.y = 185;
 
 		}
@@ -45,7 +45,7 @@ var gameOverScene = {
 			MENU.image.src = menu_image;
 			MENU.height = 30;
 			MENU.width = 60;
-			MENU.x = ( myGameArea.canvas.width / 2 ) - 30;
+			MENU.x = ( GAMEAREA.canvas.width / 2 ) - 30;
 			MENU.y = 190;
 		}
 		MENU.update();
@@ -59,7 +59,7 @@ var gameOverScene = {
 			RETRY.image.src = retry_image_hover;
 			RETRY.height = 40;
 			RETRY.width = 80;
-			RETRY.x = ( myGameArea.canvas.width / 2 ) - 40;
+			RETRY.x = ( GAMEAREA.canvas.width / 2 ) - 40;
 			RETRY.y = 145;
 
 		}
@@ -68,7 +68,7 @@ var gameOverScene = {
 			RETRY.image.src = retry_image;
 			RETRY.height = 30;
 			RETRY.width = 60;
-			RETRY.x = ( myGameArea.canvas.width / 2 ) - 30;
+			RETRY.x = ( GAMEAREA.canvas.width / 2 ) - 30;
 			RETRY.y = 150;
 		}
 		RETRY.update();

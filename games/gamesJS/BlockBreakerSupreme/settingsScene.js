@@ -23,11 +23,11 @@ var SETTINGS_HEADER, FLIGHT_PATH, PAPA_PADDLE, CURSOR, SOUNDS;
 
 var settingsScene = {
 	setup : function( ) {
-		SETTINGS_HEADER = new block( 122, 50, settings_header_image, ( myGameArea.canvas.width / 2 ) - 61, 25, 0, "image" );
-		FLIGHT_PATH = new block( 400, 64, flight_path_deactivated, ( myGameArea.canvas.width / 2 ) - 200, 75, 0, "image" );
+		SETTINGS_HEADER = new block( 122, 50, settings_header_image, ( GAMEAREA.canvas.width / 2 ) - 61, 25, 0, "image" );
+		FLIGHT_PATH = new block( 400, 64, flight_path_deactivated, ( GAMEAREA.canvas.width / 2 ) - 200, 75, 0, "image" );
 		// PAPA_PADDLE = new block( 400, 64, papa_paddle_deactivated, ( myGameArea.canvas.width / 2 ) - 200, 125, 0, "image" );
-		CURSOR = new block( 400, 64, cursor_deactivated, ( myGameArea.canvas.width / 2 ) - 200, 125, 0, "image" );
-		SOUNDS = new block( 400, 64, sounds_deactivated, ( myGameArea.canvas.width / 2 ) - 200, 175, 0, "image" );
+		CURSOR = new block( 400, 64, cursor_deactivated, ( GAMEAREA.canvas.width / 2 ) - 200, 125, 0, "image" );
+		SOUNDS = new block( 400, 64, sounds_deactivated, ( GAMEAREA.canvas.width / 2 ) - 200, 175, 0, "image" );
 
 		//set the correct state of the flight path setting
 		if ( GAME_SETTINGS.ball.flight_path == true ) {
@@ -156,10 +156,10 @@ var settingsScene = {
 		CURSOR.update();
 		SOUNDS.update();
 
-		myGameArea.context.font = "15px Arial";
-		myGameArea.context.fillStyle = "#000";
-		myGameArea.context.textAlign = "center";
-		myGameArea.context.fillText( "Press Escape to Return", width/2, height - 50 );
+		GAMEAREA.context.font = "15px Arial";
+		GAMEAREA.context.fillStyle = "#000";
+		GAMEAREA.context.textAlign = "center";
+		GAMEAREA.context.fillText( "Press Escape to Return", width/2, height - 50 );
 	},
 
 	clicked : function() {

@@ -10,9 +10,9 @@ var YES;
 
 var retryPromptScene = {
 	setup : function( next_scene ) {
-		RETRY_PROMPT_HEADER = new block( 428, 100, prompt_header, ( myGameArea.canvas.width / 2 ) - 214, 75, 0, "image" );
-		NO = new block( 36, 30, prompt_no, ( myGameArea.canvas.width / 2 ) - 100, 75, 0, "image" );
-		YES = new block( 40, 30, prompt_yes, ( myGameArea.canvas.width / 2 ) + 100, 75, 0, "image" );
+		RETRY_PROMPT_HEADER = new block( 428, 100, prompt_header, ( GAMEAREA.canvas.width / 2 ) - 214, 75, 0, "image" );
+		NO = new block( 36, 30, prompt_no, ( GAMEAREA.canvas.width / 2 ) - 100, 75, 0, "image" );
+		YES = new block( 40, 30, prompt_yes, ( GAMEAREA.canvas.width / 2 ) + 100, 75, 0, "image" );
 		this.scene_ready = true;
 	},
 
@@ -31,7 +31,7 @@ var retryPromptScene = {
 			NO.image.src = prompt_no_hover;
 			NO.height = 40;
 			NO.width = 41;
-			NO.x = ( myGameArea.canvas.width / 2 ) + 50;
+			NO.x = ( GAMEAREA.canvas.width / 2 ) + 50;
 			NO.y = 185;
 
 		}
@@ -40,7 +40,7 @@ var retryPromptScene = {
 			NO.image.src = prompt_no;
 			NO.height = 30;
 			NO.width = 36;
-			NO.x = ( myGameArea.canvas.width / 2 ) + 52;
+			NO.x = ( GAMEAREA.canvas.width / 2 ) + 52;
 			NO.y = 190;
 		}
 		NO.update();
@@ -54,7 +54,7 @@ var retryPromptScene = {
 			YES.image.src = prompt_yes_hover;
 			YES.height = 40;
 			YES.width = 50;
-			YES.x = ( myGameArea.canvas.width / 2 ) - 55;
+			YES.x = ( GAMEAREA.canvas.width / 2 ) - 55;
 			YES.y = 185;
 
 		}
@@ -63,15 +63,15 @@ var retryPromptScene = {
 			YES.image.src = prompt_yes;
 			YES.height = 30;
 			YES.width = 40;
-			YES.x = ( myGameArea.canvas.width / 2 ) - 50;
+			YES.x = ( GAMEAREA.canvas.width / 2 ) - 50;
 			YES.y = 190;
 		}
 		YES.update();
 
-		myGameArea.context.font = "15px Arial";
-		myGameArea.context.fillStyle = "#000";
-		myGameArea.context.textAlign = "center";
-		myGameArea.context.fillText( "Press Escape to Return", width/2, height - 50 );
+		GAMEAREA.context.font = "15px Arial";
+		GAMEAREA.context.fillStyle = "#000";
+		GAMEAREA.context.textAlign = "center";
+		GAMEAREA.context.fillText( "Press Escape to Return", width/2, height - 50 );
 	},
 
 	clicked : function() {
