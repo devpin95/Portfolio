@@ -26,18 +26,40 @@
         	<!--About-->
         	<div class="about">            	
                 <div class="aboutTitle"><img src="images/gradPic.jpg" class="pic" alt="Devin Piner" title="Devin Piner"/>About Devin Piner</div>
-                <p><?php include "aboutMe.php"; ?></p>
+                <?php include "aboutMe.php"; ?>
                 
                 <!--Social Links-->
                 <div class="aboutSocialLinks">
-                	<span class="sectionHeader" style="font-family:'open sans light'; font-size:20px;">Places You Can Find Him:</span>
+                    <p class="aboutSocialLinksHeader">Places You Can Find Me:</p>
                     <ul>
-                        <li title="Twitter" class="twitter"><a href="https://twitter.com/Devpin1995" target="_blank" class="socialFillLink"></a><a href="https://twitter.com/Devpin1995" class="ieLinkFix">Twitter</a></li>
-                        <li class="linkedin"><a href="http://www.linkedin.com/pub/devin-piner/96/547/310/" target="_blank" class="socialFillLink"></a><a href="http://www.linkedin.com/pub/devin-piner/96/547/310/" class="ieLinkFix">LinkedIn</a></li>
-                        <li class="freelancer"><a href="http://www.freelancer.com/u/devpin.html" target="_blank" class="socialFillLink"></a><a href="http://www.freelancer.com/u/devpin.html" class="ieLinkFix">Freelancer.com</a></li>
+                        <li class="linkedin"><a href="www.linkedin.com/in/dpiner" target="_blank" class="socialFillLink"></a>LinkedIn</li>
+                        <li class="github"><a href="https://github.com/devpin95" target="_blank" class="socialFillLink"></a>GitHub</li>
                     </ul>
                 </div>
-            </div>  
+                <div class="clearFix">&nbsp;</div>
+            </div>
+
+            <div class="data">
+                <div class="githubData">
+                    <!-- Prepare a container for your calendar. -->
+                    <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+
+                    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+                    <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css" />
+
+                    <!-- Prepare a container for your calendar. -->
+                    <div class="calendar">
+                        <!-- Loading stuff -->
+                        Loading the data just for you.
+                    </div>
+
+                    <script> new GitHubCalendar(".calendar", "devpin95");</script>
+                    <p class="calendarSource"><a href="https://github.com/IonicaBizau/github-calendar.git">GitHub Calander by Ionică Bizău</a></p>
+                </div>
+                <div class="wakatimeData">
+                    <figure><embed src="https://wakatime.com/share/@5c619fd4-fbd1-4b5e-b88f-440a58132890/3a0d6a96-d167-4767-87be-6dea71324d0d.svg"></embed></figure>
+                </div>
+            </div>
             
             <!--Skills-->
             <span class="sectionHeader" style="margin-bottom:0">Skills</span>
