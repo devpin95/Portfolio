@@ -30,9 +30,10 @@
                 <div class="aboutSocialLinks">
                 	<span class="sectionHeader" style="font-family:'open sans light'; font-size:20px;">Places You Can Find Him:</span>
                     <ul>
-                        <li title="Twitter" class="twitter"><a href="https://twitter.com/Devpin1995" target="_blank" class="socialFillLink"></a>Twitter</li>
-                        <li class="linkedin"><a href="http://www.linkedin.com/pub/devin-piner/96/547/310/" target="_blank" class="socialFillLink"></a>LinkedIn</li>
-                        <li class="freelancer"><a href="http://www.freelancer.com/u/devpin.html" target="_blank" class="socialFillLink"></a>Freelancer.com</li>
+                        <!-- <li title="Twitter" class="twitter"><a href="https://twitter.com/Devpin1995" target="_blank" class="socialFillLink"></a>Twitter</li> -->
+                        <li class="linkedin"><a href="www.linkedin.com/in/dpiner" target="_blank" class="socialFillLink"></a>LinkedIn</li>
+                        <li class="github"><a href="https://github.com/devpin95" target="_blank" class="socialFillLink"></a>GitHub</li>
+                        <!-- <li class="freelancer"><a href="http://www.freelancer.com/u/devpin.html" target="_blank" class="socialFillLink"></a>Freelancer.com</li> -->
                     </ul>
                 </div>
                 <div class="clearFix">&nbsp;</div>

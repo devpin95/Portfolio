@@ -125,19 +125,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b2b2', end
 	opacity:1;	
 	border-color:#aaa;
 }
-.aboutSocialLinks .twitter{
+/*.aboutSocialLinks .twitter{
 	background-image:url(../images/twitter.png);
 	background-repeat:no-repeat;	
-}
+}*/
 .aboutSocialLinks .linkedin{
 	background-image:url(../images/LinkedIn.png);
 	background-repeat:no-repeat;	
 }
-.aboutSocialLinks .freelancer{
+.aboutSocialLinks .github{
+	background-image:url(../images/GitHub-Mark-32px.png);
+	background-repeat:no-repeat;	
+}
+/*.aboutSocialLinks .freelancer{
 	background-image:url(../images/freelancer.png);
 	background-repeat:no-repeat;	
 	border-right:none;
-}
+}*/
 .socialFillLink{
 	position:absolute;
 	left:0;
