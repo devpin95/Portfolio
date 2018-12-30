@@ -26,9 +26,10 @@
             <div class="section">
                 <span class="footerTitle">Social Links</span><br/>
                 <ul>
-                    <li><a href="https://twitter.com/Devpin1995" target="_blank">Twitter</a></li>
-                    <li><a href="http://www.linkedin.com/pub/devin-piner/96/547/310/" target="_blank">LinkedIn</a></li>
-                    <li><a href="http://www.freelancer.com/u/devpin.html" target="_blank">Freelancer</a></li>
+                    <!-- <li><a href="https://twitter.com/Devpin1995" target="_blank">Twitter</a></li> -->
+                    <li><a href="https://linkedin.com/in/dpiner" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/devpin95" target="_blank">GitHub</a></li>
+                    <!-- <li><a href="http://www.freelancer.com/u/devpin.html" target="_blank">Freelancer</a></li> -->
                 </ul>
             </div>
         </div>
