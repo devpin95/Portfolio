@@ -29,11 +29,10 @@
                 
                 <!--Social Links-->
                 <div class="aboutSocialLinks">
-                	<p class="aboutSocialLinksHeader">Places You Can Find Me:</p>
+                	<p class="aboutSocialLinksHeader">Places You Can Find Me</p>
                     <ul>
                         <li class="linkedin"><a href="https://linkedin.com/in/dpiner" target="_blank" class="socialFillLink"></a>LinkedIn</li>
                         <li class="github"><a href="https://github.com/devpin95" target="_blank" class="socialFillLink"></a>GitHub</li>
-                        <li class="wakatime"><a href="https://github.com/devpin95" target="_blank" class="socialFillLink"></a>GitHub</li>
                     </ul>
                 </div>
                 <div class="clearFix">&nbsp;</div>
