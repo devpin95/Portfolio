@@ -3,7 +3,7 @@
         <a href="/" class="headerLink">
             <!--<span class="devin">DEVIN</span><span class="piner">PINER</span>
             <span class="sub">WEB DESIGNS</span-->
-            <img src="/images/DevinPiner.svg" alt="Devin Piner Web Designs" />
+            <img src="/images/logo.png" alt="Devin Piner Web Designs" />
         </a>
     </div>
     <nav>
