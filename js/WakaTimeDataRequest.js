@@ -19,11 +19,90 @@ $(document).ready(function() {
         dataType: 'jsonp',
         success: function(response) {
             console.log(response);
-            seconds = 0;
+
+            var dataPoints = [];
+            var dataLabels = [];
+            var dataColors = [];
+
+            var seconds = 0;
+            var max = 0
             for ( i = 0; i < response["data"].length; ++i ) {
-                seconds += response["data"][i]["grand_total"].total_seconds;
+                // add up the total
+                seconds += response["data"][i]["grand_total"]["total_seconds"];
+
+                // find the biggest
+                if ( response["data"][i]["grand_total"].total_seconds > max ) {
+                    max = response["data"][i]["grand_total"]["total_seconds"];
+                }
+
+                var point = {};
+                // point["x"] = response["data"][i]["range"]["date"];
+                // point["y"] = response["data"][i]["grand_total"]["total_seconds"];
+                dataLabels.push(response["data"][i]["range"]["date"]);
+                dataPoints.push( ((response["data"][i]["grand_total"]["total_seconds"]) / 60 / 60).toFixed(2) );
+                dataColors.push( customColorSet[Math.floor( Math.random() * customColorSetSize )] );
             }
+
+            console.log(dataPoints);
+
+            // display total time
             $("#totalTime").html( (seconds / 60 / 60).toFixed(2) + " hours" );
+            $("#totalTime").css('color', customColorSet[Math.floor( Math.random() * customColorSetSize )]);
+
+            // display most work done
+            $("#averageTime").html( ( (seconds / 60 / 60) / 30).toFixed(2) + " hours" );
+            $("#averageTime").css('color', customColorSet[Math.floor( Math.random() * customColorSetSize )]);
+
+            // display most work done
+            $("#bestTime").html( (max / 60 / 60).toFixed(2) + " hours" );
+            $("#bestTime").css('color', customColorSet[Math.floor( Math.random() * customColorSetSize )]);
+
+            // set up the graph
+            var ctx = document.getElementById("activityChartContainer").getContext('2d');
+            var myBarChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: dataLabels,
+                    datasets: [
+                        {
+                            label: "Hours",
+                            backgroundColor: dataColors,
+                            data: dataPoints,
+                            borderColor: ["rgba(0, 0, 0, 0.1)","rgba(0, 0, 0, 0.1)","rgba(0, 0, 0, 0.1)","rgba(0, 0, 0, 0.1)","rgba(0, 0, 0, 0.1)","rgba(0, 0, 0, 0.1)","rgba(0, 0, 0, 0.1)","rgba(0, 0, 0, 0.1)","rgba(0, 0, 0, 0.1)","rgba(0, 0, 0, 0.1)","rgba(0, 0, 0, 0.1)","rgba(0, 0, 0, 0.1)","rgba(0, 0, 0, 0.1)"],
+                            borderWidth: [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    legend: { 
+                        display: false,
+                        labels: {
+                            fontColor: "white"
+                        }
+                    },
+                    title: {
+                        display: false,
+                    },
+                    scales: {
+                        xAxes: [{
+                            display: true,
+                            gridLines: {
+                                display: false ,
+                                color: "#444"
+                            },
+                        }],
+                        yAxes: [{
+                            display: true,
+                            gridLines: {
+                                display: false ,
+                                color: "#444"
+                            },
+                        }]
+                    }
+                }
+            });
+
         },
     });
 

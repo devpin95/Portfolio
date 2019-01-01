@@ -149,9 +149,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b2b2', end
 	font-family:"open sans light";
 	color:#111;
 }
+.stat{
+	padding:0;
+	margin:50px 0 0 0;
+	text-align:center;
+	font-family:"bebas regular";
+	font-size:50px;
+}
 .data .wakatimeData h2{
 	color:#ededed;
 	text-align:center;
+	margin-top:20px;
 }
 .githubData .calendarSource{
 	font-size:11px;
@@ -162,19 +170,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b2b2', end
 }
 .githubData .calendar h2{
 	color:#111;
+	margin-top:20px;
 }
-#totalTime{
+.statValue{
 	text-align:center;
-	font-family:"bebas regular";
-	font-size:50px;
-	padding:0;
-	margin:50px 0 0 0;
+	margin:0;
 }
-.totalTimeLabel{
+.statDesc{
 	text-align:center;
-	font-size:14px;
+	font-size:16px;
 	color:#ededed;
 	margin:0 0 50px 0;
+}
+.activity{
+	margin:20px auto;
 }
 .githubData{
 	margin-bottom:20px;
@@ -197,8 +206,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b2b2', end
 }
 .pie ul li{
 	list-style-type: none;
-	font-size:13px;
+	font-size:15px;
 	padding:2px 0;
+	font-family:"bebas regular";
 }
 .pie ul li span{
 	padding-left:1.5em;
@@ -253,6 +263,13 @@ p a:hover{
 	max-width:450px;
 	margin:20px auto;
 }
+.activity{
+	width:100%;
+}
+.stat{
+	width:100%;
+	float:left;
+}
 }
 
 /*-------------------------------------------------------------------------------------------------------*/
@@ -263,15 +280,14 @@ p a:hover{
 .pie figure{
 	margin:0;
 }
-/*.pie {
+.activity{
 	width:100%;
-	max-width:none;
-	float:left;
-	margin:20px auto;
-}*/
 }
-
-
+.stat{
+	width:32%;
+	float:left;
+}
+}
 
 @media only screen and (min-width: 960px) {
 /*Project Styles*/
@@ -313,4 +329,13 @@ h1,h2,h3,h4,h5,h6{
 	max-width:none;
 	float:left;
 	margin:20px auto;
+}
+.activity{
+	margin:20px auto;
+	width:85%;
+}
+.stat{
+	width:32%;
+	float:left;
+}
 }

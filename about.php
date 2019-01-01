@@ -58,11 +58,29 @@
                         <script> new GitHubCalendar(".calendar", "devpin95");</script>
                         <p class="calendarSource"><a href="https://github.com/IonicaBizau/github-calendar.git">GitHub Calander by Ionică Bizău</a></p>
                     </div>
-                    <h2>Coding Activity in the last 30 days</h2>
-                    <figure><embed src="https://wakatime.com/share/@devpin/458e0927-8933-4781-ba2a-c4903ba55771.svg"></embed></figure>
 
-                    <p id="totalTime"></p>
-                    <p class="totalTimeLabel">Spent coding in the last 30 days</p>
+                    <h2>Coding Activity in the last 30 days</h2>
+                    <!-- <figure><embed src="https://wakatime.com/share/@devpin/501ee7f7-7f21-4fff-830d-479e6a666f77.svg"></embed></figure> -->
+                    <div class="activity">
+                        <canvas id="activityChartContainer" width="800px"></canvas>
+                    </div>
+
+                    <div class="stat">
+                        <p id="totalTime" class="statValue"></p>
+                        <p class="statDesc">Spent coding in the last 30 days</p>
+                    </div>
+
+                    <div class="stat">
+                        <p id="averageTime" class="statValue">15 Hours</p>
+                        <p class="statDesc">Average work per day</p>
+                    </div>
+
+                    <div class="stat">
+                        <p id="bestTime" class="statValue"></p>
+                        <p class="statDesc">Most work done in a day</p>
+                    </div>
+
+                    <div class="clearFix">&nbsp;</div>
 
                     <div class="pie">
                         <h2>Languages Used in the last 30 days</h2>
