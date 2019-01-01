@@ -53,25 +53,15 @@ main{
 }
 .aboutTitle{
 	width:100%;
-
-	border-top-left-radius:2px;
-	border-bottom-left-radius:2px;
-	-moz-border-top-left-radius:2px;
-	-moz-border-bottom-left-radius:2px;
-	-webkit-border-top-left-radius:2px;
-	-webkit-border-bottom-left-radius:2px;
-	background: -moz-linear-gradient(left,  rgba(0,178,178,1) 0%, rgba(0,178,178,1) 77%, rgba(0,178,178,0) 99%, rgba(0,178,178,0) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,178,178,1)), color-stop(77%,rgba(0,178,178,1)), color-stop(99%,rgba(0,178,178,0)), color-stop(100%,rgba(0,178,178,0))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left,  rgba(0,178,178,1) 0%,rgba(0,178,178,1) 77%,rgba(0,178,178,0) 99%,rgba(0,178,178,0) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left,  rgba(0,178,178,1) 0%,rgba(0,178,178,1) 77%,rgba(0,178,178,0) 99%,rgba(0,178,178,0) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left,  rgba(0,178,178,1) 0%,rgba(0,178,178,1) 77%,rgba(0,178,178,0) 99%,rgba(0,178,178,0) 100%); /* IE10+ */
-background: linear-gradient(to right,  rgba(0,178,178,1) 0%,rgba(0,178,178,1) 77%,rgba(0,178,178,0) 99%,rgba(0,178,178,0) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b2b2', endColorstr='#0000b2b2',GradientType=1 ); /* IE6-9 */
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	background-color:#00b2b2;
 	font-family:"open sans light";
 	font-size:25px;
 }
 .about p a{
-	color:#00b2b2;	
+	color:#009090;	
 	
 	-webkit-transition: all .05s linear;
     -o-transition: all .05s linear;
@@ -81,7 +71,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b2b2', end
     transition: all .05s linear;
 }
 .about p a:hover{
-	color:#f00;	
+	color:#c0392b;	
 }
 .about p .learnMoreLink{
 	float:right;
@@ -225,7 +215,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b2b2', end
 	font-family:"open sans light";
 	font-size:25px;
 	text-decoration:none;
-	color:#00b2b2;	
+	color:#009090;	
 	
 	transition:all .2s ease-out;	
 	-webkit-transition:all .2s ease-out;	
@@ -235,7 +225,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b2b2', end
 	
 }
 .title a:hover{
-	color:#000;	
+	color:#c0392b;	
 }
 .info{
 	position:relative;
@@ -338,7 +328,7 @@ making the projects center after the screen is too small to fit them side-by-sid
 	font-family:"open sans light";
 	font-size:25px;
 	text-decoration:none;
-	color:#00b2b2;	
+	color:#009090;	
 	
 	transition:all .2s ease-out;	
 	-webkit-transition:all .2s ease-out;	
@@ -348,7 +338,7 @@ making the projects center after the screen is too small to fit them side-by-sid
 	
 }
 .title a:hover{
-	color:#000;	
+	color:#c0392b;	
 }
 .info{
 	position:relative;
