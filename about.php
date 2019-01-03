@@ -12,7 +12,7 @@
 <script src="js/sticky.js"></script>
 <script src="js/skillsAnimation.js"></script>
 
-<title>Devin Piner | Web Designs</title>
+<title>Devin Piner | Software Engineer</title>
 </head>
 
 <body>
