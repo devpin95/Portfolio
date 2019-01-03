@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+.videoWrapper{
+	position:relative;
+	overflow:hidden;
+	padding-bottom:56.25%;
+}
+.videoWrapper iframe{
+	position:absolute;
+	top:0;
+	left:0;
+	border:0;
+	width:100%;
+	height:100%;
+}
+/*Game Backgrounds*/
+.caption{
+	width:100%;
+	display:block;
+	text-align:center;
+	margin-top:5px;
+	color:#f00;
+	font-style:italic;
+	font-size:12px;
+	z-index:1000;	
+}
+.sectionHeader{
+	margin-bottom:0;
+	margin-top:20px;	
+}
+.siteDescription{
+	padding-bottom:20px;
+	line-height:1.5em;	
+}
+.siteDescription a{
+	color:#00b2b2;
+	
+	-webkit-transition: all .05s linear;
+    -o-transition: all .05s linear;
+    -moz-transition: all .05s linear;
+    -ms-transition: all .05s linear;
+    -kthtml-transition: all .05s linear;
+    transition: all .05s linear;	
+}
+.siteDescription a:focus{
+	outline:none;
+	color:#fff;
+	background-color:#318DFD;	
+}
+.siteDescription a:focus:hover{
+	background-color:#00f;
+	color:#fff;	
+}
+.siteDescription img{
+	display:block;
+	margin:0 auto;
+	width:100%;
+	height:auto;
+}
+.siteDescription figure{
+	margin:50px 0;
+}
+.siteDescription figcaption{
+	padding-top:10px;
+	text-align:center;
+	font-size:12px;
+	font-family:"droid italic";
+	color:#888;
+}
+.siteDescription pre{
+	background-color:#eee;
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border:1px solid #aaa;
+	padding:7px 5px;
+	margin:35px 0;
+}
+.info{
+	padding:0;
+	margin:0;
+}
+.info a{
+	color:#009090;
+
+	-webkit-transition: all .05s linear;
+    -o-transition: all .05s linear;
+    -moz-transition: all .05s linear;
+    -ms-transition: all .05s linear;
+    -kthtml-transition: all .05s linear;
+    transition: all .05s linear;
+}
+.info a:hover{
+	color:#c0392b;
+}
+h1{
+	margin: 50px 0 20px 0;
+}
+h2{
+	margin:20px 0 10px 0;
+}
+h3{
+	font-size:18px;
+}
+.firstPara{
+	margin-top:0;
+}
+ul, ol{
+	margin:0;
+}
+
+@media only screen and (min-width: 960px) {
+.siteDescription{
+	padding-bottom:20px;
+	line-height:1.5em;	
+}	
+}
