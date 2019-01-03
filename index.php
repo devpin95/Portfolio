@@ -91,11 +91,19 @@
 
                 <!--JavaScript Games-->                
                 <div class="work second-in-pair">  
-                    <a href="jsgames.php" class="workLink"><img src="images/jsGames.jpg" class="image isaac" alt="Design Study" /></a> 
-                    <div class="title"><a href="jsgames.php">JavaScript + HTML5 Games</a></div>
+                    <a href="jsgames" class="workLink"><img src="images/jsGames.jpg" class="image isaac" alt="Design Study" /></a> 
+                    <div class="title"><a href="jsgames">JavaScript + HTML5 Games</a></div>
                     Web-based game study.
                 </div>         
-                <div class="clearFix"></div>   
+                <div class="clearFix"></div> 
+
+                <!--Hardware-->                
+                <div class="work first-in-pair">  
+                    <a href="hardware.php" class="workLink"><img src="images/hardware.jpg" class="image games" alt="Hardware/Software Study" /></a>
+                    <div class="title"><a href="hardware.php">Hardware/Software Study</a></div>
+                    Hardware-Software interface development
+                </div> 
+                <div class="clearFix"></div>  
                                                                
             </div>
 
